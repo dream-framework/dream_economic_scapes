@@ -1,0 +1,463 @@
+{
+  "generated_at_utc": "2026-05-16T18:33:42+00:00",
+  "formula_version": "s2-econ-retention-poc-v1.2-truth-oriented-distortion-audit",
+  "live_only": true,
+  "country_count": 215,
+  "date_window": {
+    "start_year": 1986,
+    "end_year": 2026,
+    "history_years_requested": 40
+  },
+  "source_metadata": {
+    "inflation": {
+      "code": "FP.CPI.TOTL.ZG",
+      "label": "Inflation, consumer prices (annual %)",
+      "unit": "%",
+      "role": "observed_price_pressure",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL.ZG?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "cpi_index": {
+      "code": "FP.CPI.TOTL",
+      "label": "Consumer price index",
+      "unit": "index",
+      "role": "observed_price_level",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "gdp_deflator_inflation": {
+      "code": "NY.GDP.DEFL.KD.ZG",
+      "label": "Inflation, GDP deflator (annual %)",
+      "unit": "%",
+      "role": "economy_wide_price_pressure_crosscheck",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.DEFL.KD.ZG?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "gdp_growth": {
+      "code": "NY.GDP.MKTP.KD.ZG",
+      "label": "GDP growth (annual %)",
+      "unit": "%",
+      "role": "real_output_growth",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "gdp_pc_growth": {
+      "code": "NY.GDP.PCAP.KD.ZG",
+      "label": "GDP per capita growth (annual %)",
+      "unit": "%",
+      "role": "productive_growth_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.KD.ZG?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "broad_money_gdp": {
+      "code": "FM.LBL.BMNY.GD.ZS",
+      "label": "Broad money (% of GDP)",
+      "unit": "% of GDP",
+      "role": "financialization_depth_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/FM.LBL.BMNY.GD.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "broad_money_growth": {
+      "code": "FM.LBL.BMNY.ZG",
+      "label": "Broad money growth (annual %)",
+      "unit": "%",
+      "role": "monetary_expansion_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/FM.LBL.BMNY.ZG?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "domestic_credit_private_gdp": {
+      "code": "FS.AST.PRVT.GD.ZS",
+      "label": "Domestic credit to private sector (% of GDP)",
+      "unit": "% of GDP",
+      "role": "financialization_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/FS.AST.PRVT.GD.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "debt_service_exports": {
+      "code": "DT.TDS.DECT.EX.ZS",
+      "label": "Total debt service (% of exports)",
+      "unit": "% of exports",
+      "role": "debt_pressure_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/DT.TDS.DECT.EX.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "gov_expense_gdp": {
+      "code": "GC.XPN.TOTL.GD.ZS",
+      "label": "Expense (% of GDP)",
+      "unit": "% of GDP",
+      "role": "overhead_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/GC.XPN.TOTL.GD.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "unemployment": {
+      "code": "SL.UEM.TOTL.ZS",
+      "label": "Unemployment, total (% of labor force)",
+      "unit": "%",
+      "role": "labor_slack_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/SL.UEM.TOTL.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "labor_force_participation": {
+      "code": "SL.TLF.CACT.ZS",
+      "label": "Labor force participation rate, total (% ages 15+)",
+      "unit": "%",
+      "role": "hidden_labor_slack_crosscheck",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/SL.TLF.CACT.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "employment_to_population": {
+      "code": "SL.EMP.TOTL.SP.ZS",
+      "label": "Employment to population ratio, 15+, total (%)",
+      "unit": "%",
+      "role": "hidden_labor_slack_crosscheck",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/SL.EMP.TOTL.SP.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "trade_gdp": {
+      "code": "NE.TRD.GNFS.ZS",
+      "label": "Trade (% of GDP)",
+      "unit": "% of GDP",
+      "role": "openness_context",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/NE.TRD.GNFS.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "exports_gdp": {
+      "code": "NE.EXP.GNFS.ZS",
+      "label": "Exports of goods and services (% of GDP)",
+      "unit": "% of GDP",
+      "role": "external_throughput_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/NE.EXP.GNFS.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "manufacturing_value_added_gdp": {
+      "code": "NV.IND.MANF.ZS",
+      "label": "Manufacturing, value added (% of GDP)",
+      "unit": "% of GDP",
+      "role": "physical_production_depth_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/NV.IND.MANF.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "industry_value_added_gdp": {
+      "code": "NV.IND.TOTL.ZS",
+      "label": "Industry, value added (% of GDP)",
+      "unit": "% of GDP",
+      "role": "physical_production_depth_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/NV.IND.TOTL.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "manufacturing_value_added_usd": {
+      "code": "NV.IND.MANF.CD",
+      "label": "Manufacturing, value added (current US$)",
+      "unit": "current US$",
+      "role": "physical_production_mass_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/NV.IND.MANF.CD?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "industry_value_added_usd": {
+      "code": "NV.IND.TOTL.CD",
+      "label": "Industry, value added (current US$)",
+      "unit": "current US$",
+      "role": "physical_production_mass_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/NV.IND.TOTL.CD?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "manufacturing_growth": {
+      "code": "NV.IND.MANF.KD.ZG",
+      "label": "Manufacturing, value added (annual % growth)",
+      "unit": "%",
+      "role": "physical_production_momentum_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/NV.IND.MANF.KD.ZG?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "industry_growth": {
+      "code": "NV.IND.TOTL.KD.ZG",
+      "label": "Industry, value added (annual % growth)",
+      "unit": "%",
+      "role": "physical_production_momentum_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/NV.IND.TOTL.KD.ZG?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "manufactures_exports_share": {
+      "code": "TX.VAL.MANF.ZS.UN",
+      "label": "Manufactures exports (% of merchandise exports)",
+      "unit": "%",
+      "role": "manufacturing_export_complexity_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/TX.VAL.MANF.ZS.UN?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "high_tech_exports_share": {
+      "code": "TX.VAL.TECH.MF.ZS",
+      "label": "High-technology exports (% of manufactured exports)",
+      "unit": "%",
+      "role": "productive_complexity_proxy",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/TX.VAL.TECH.MF.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "r_and_d_gdp": {
+      "code": "GB.XPD.RSDV.GD.ZS",
+      "label": "Research and development expenditure (% of GDP)",
+      "unit": "% of GDP",
+      "role": "technical_depth_proxy_non_imf",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/GB.XPD.RSDV.GD.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "researchers_per_million": {
+      "code": "SP.POP.SCIE.RD.P6",
+      "label": "Researchers in R&D (per million people)",
+      "unit": "per million",
+      "role": "technical_labor_depth_proxy_non_imf",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.SCIE.RD.P6?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "patent_applications_residents": {
+      "code": "IP.PAT.RESD",
+      "label": "Patent applications, residents",
+      "unit": "applications",
+      "role": "revealed_technical_output_proxy_wipo",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/IP.PAT.RESD?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "container_port_traffic_teu": {
+      "code": "IS.SHP.GOOD.TU",
+      "label": "Container port traffic (TEU)",
+      "unit": "TEU",
+      "role": "logistics_throughput_proxy_non_imf",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/IS.SHP.GOOD.TU?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "rail_lines_km": {
+      "code": "IS.RRS.TOTL.KM",
+      "label": "Rail lines (total route-km)",
+      "unit": "route-km",
+      "role": "physical_infrastructure_proxy_non_imf",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/IS.RRS.TOTL.KM?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "electric_power_consumption_kwh_pc": {
+      "code": "EG.USE.ELEC.KH.PC",
+      "label": "Electric power consumption (kWh per capita)",
+      "unit": "kWh per capita",
+      "role": "physical_energy_depth_proxy_iea",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/EG.USE.ELEC.KH.PC?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "military_expenditure_gdp": {
+      "code": "MS.MIL.XPND.GD.ZS",
+      "label": "Military expenditure (% of GDP)",
+      "unit": "% of GDP",
+      "role": "state_directed_strategic_allocation_proxy_sipri",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/MS.MIL.XPND.GD.ZS?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "ppp_price_level_ratio": {
+      "code": "PA.NUS.GDP.PLI",
+      "label": "Price level index (GDP), divided by 100 for conservative PPP ratio",
+      "unit": "index US=100 -> ratio",
+      "role": "conservative_purchasing_power_price_level_crosscheck",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/PA.NUS.GDP.PLI?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "ppp_gdp_conversion_factor": {
+      "code": "PA.NUS.PPP",
+      "label": "PPP conversion factor, GDP (LCU per international $)",
+      "unit": "LCU per international $",
+      "role": "purchasing_power_audit_context",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "ppp_private_consumption_factor": {
+      "code": "PA.NUS.PRVT.PP",
+      "label": "PPP conversion factor, private consumption (LCU per international $)",
+      "unit": "LCU per international $",
+      "role": "household_purchasing_power_audit_context",
+      "api_url": "https://api.worldbank.org/v2/country/all/indicator/PA.NUS.PRVT.PP?format=json&per_page=20000&date=1986:2026",
+      "lastupdated": "2026-04-08",
+      "sourceid": "2",
+      "rows": 10640
+    },
+    "manufacturing_mass_score": {
+      "code": "manufacturing_mass_score",
+      "label": "Log-normalized manufacturing value-added mass score vs largest country-year producer",
+      "unit": "0-100",
+      "role": "derived_physical_mass_normalizer",
+      "api_url": null,
+      "lastupdated": "2026-04-08",
+      "sourceid": "derived_from_world_bank_absolute_value_added",
+      "rows": null
+    },
+    "industry_mass_score": {
+      "code": "industry_mass_score",
+      "label": "Log-normalized industry value-added mass score vs largest country-year producer",
+      "unit": "0-100",
+      "role": "derived_physical_mass_normalizer",
+      "api_url": null,
+      "lastupdated": "2026-04-08",
+      "sourceid": "derived_from_world_bank_absolute_value_added",
+      "rows": null
+    },
+    "patent_applications_mass_score": {
+      "code": "patent_applications_mass_score",
+      "label": "Log-normalized resident patent-application mass score vs largest country-year producer",
+      "unit": "0-100",
+      "role": "derived_physical_mass_normalizer",
+      "api_url": null,
+      "lastupdated": "2026-04-08",
+      "sourceid": "derived_from_world_bank_absolute_value_added",
+      "rows": null
+    },
+    "container_port_mass_score": {
+      "code": "container_port_mass_score",
+      "label": "Log-normalized container-port throughput mass score vs largest country-year port system",
+      "unit": "0-100",
+      "role": "derived_physical_mass_normalizer",
+      "api_url": null,
+      "lastupdated": "2026-04-08",
+      "sourceid": "derived_from_world_bank_absolute_value_added",
+      "rows": null
+    },
+    "rail_lines_mass_score": {
+      "code": "rail_lines_mass_score",
+      "label": "Log-normalized rail-route infrastructure mass score vs largest country-year rail network",
+      "unit": "0-100",
+      "role": "derived_physical_mass_normalizer",
+      "api_url": null,
+      "lastupdated": "2026-04-08",
+      "sourceid": "derived_from_world_bank_absolute_value_added",
+      "rows": null
+    }
+  },
+  "cluster_labels": {
+    "productive_coherence": "Productive coherence",
+    "symbolic_finance": "Symbolic finance",
+    "retention_drag": "Retention drag",
+    "inflation_shock": "Inflation shock",
+    "dust_overhead": "Dust / overhead",
+    "transition": "Transition / mixed",
+    "low_signal": "Low signal"
+  },
+  "dynamics": {
+    "available_years": [
+      1986,
+      1987,
+      1988,
+      1989,
+      1990,
+      1991,
+      1992,
+      1993,
+      1994,
+      1995,
+      1996,
+      1997,
+      1998,
+      1999,
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "flow_interpretation": "Inferred retention-pressure gradient arcs, not observed bilateral financial/trade flows."
+  },
+  "model_notes": {
+    "no_demo_data": "No synthetic country records or demo values are written. Derived layers use only present live-source inputs and emit null when needed inputs are absent.",
+    "productive_capacity_score": "0-100 physical productive capacity proxy from manufacturing/industry value-added mass and GDP share, production momentum, manufactured/export complexity, technical depth, and a smaller real-growth term.",
+    "sovereign_coherence_score": "0-100 conservative proxy for revealed state/build capacity from physical production, technical depth, logistics/energy infrastructure, and limited strategic allocation inputs. It is not a claim about ideology or military effectiveness.",
+    "capacity_shield_score": "The stronger of productive capacity and sovereign coherence, used conservatively to reduce false dust/noise attribution.",
+    "ppp_adjustment": "Conservative PPP/price-level adjustment from PA.NUS.GDP.PLI divided by 100. Low domestic price levels only nudge already-observed physical mass upward by at most 12%; high price levels can apply a small cost drag. It does not invent capacity where physical-production signals are absent.",
+    "productive_inflation": "max(CPI inflation,0) multiplied by the physical productive capacity score, not GDP growth alone.",
+    "retention_drag": "Residual positive inflation after productive component, weighted by present debt-service, government-expense, and negative-growth pressure scores.",
+    "symbolic_inflation": "Residual positive inflation weighted by smooth broad-money/GDP and private-credit/GDP financialization scores. The old hard-clipped finance score is retained as legacy_financialization_score for audit only.",
+    "measurement_robust_s2_score": "Measurement-robust S2 stress score from CPI/GDP-deflator cross-check, broad-money growth, hidden labor slack, debt/overhead, weak growth, and smoothed finance depth. This does not truly reverse hedonics or national methodology; it reduces dependence on any single official series.",
+    "official_cleaned_toggle": "The app exposes a global Official/Cleaned toggle. Official mode uses direct World Bank series. Cleaned mode uses the measurement-adjusted proxy input set for all layers, including dynamics and flows.",
+    "economic_distortion_index": "0-100 truth-oriented conservative S2 audit index. It compares official projection against cleaned cross-checks, accounting divergence, structural masking, and revealed build capacity. High means official health may be overstated relative to deeper live-source S2 signals; it is not proof of intentional lying.",
+    "measurement_divergence_score": "CPI-vs-GDP-deflator divergence plus labor slack cross-checks from participation/employment signals.",
+    "dust_index": "0-100 maintenance/overhead proxy from present debt, finance, government expense, unemployment, and negative-growth pressures, partially offset by measured physical productive capacity.",
+    "coherence_score": "100 minus present pressure scores from inflation deviation, debt, finance, labor slack, negative growth, and missing capacity shield. Higher is more coherent.",
+    "dynamics_layer": "Yearly cluster states and inferred regional pressure-gradient arcs from historical live-source indicators. Arcs are not measured trade/capital flows; they are visual hypotheses from retention-pressure gradients."
+  }
+}
