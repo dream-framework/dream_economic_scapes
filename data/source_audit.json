@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-12T11:35:17+00:00",
+  "generated_at_utc": "2026-07-14T11:49:16+00:00",
   "formula_version": "s2-econ-retention-poc-v1.2-truth-oriented-distortion-audit",
   "live_only": true,
   "country_count": 215,
@@ -15,7 +15,7 @@
       "unit": "%",
       "role": "observed_price_pressure",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL.ZG?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -25,7 +25,7 @@
       "unit": "index",
       "role": "observed_price_level",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -35,7 +35,7 @@
       "unit": "%",
       "role": "economy_wide_price_pressure_crosscheck",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.DEFL.KD.ZG?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -45,7 +45,7 @@
       "unit": "%",
       "role": "real_output_growth",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -55,7 +55,7 @@
       "unit": "%",
       "role": "productive_growth_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.KD.ZG?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -65,7 +65,7 @@
       "unit": "% of GDP",
       "role": "financialization_depth_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/FM.LBL.BMNY.GD.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -75,7 +75,7 @@
       "unit": "%",
       "role": "monetary_expansion_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/FM.LBL.BMNY.ZG?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -85,7 +85,7 @@
       "unit": "% of GDP",
       "role": "financialization_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/FS.AST.PRVT.GD.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -95,7 +95,7 @@
       "unit": "% of exports",
       "role": "debt_pressure_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/DT.TDS.DECT.EX.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -105,7 +105,7 @@
       "unit": "% of GDP",
       "role": "overhead_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/GC.XPN.TOTL.GD.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -115,7 +115,7 @@
       "unit": "%",
       "role": "labor_slack_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/SL.UEM.TOTL.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -125,7 +125,7 @@
       "unit": "%",
       "role": "hidden_labor_slack_crosscheck",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/SL.TLF.CACT.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -135,7 +135,7 @@
       "unit": "%",
       "role": "hidden_labor_slack_crosscheck",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/SL.EMP.TOTL.SP.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -145,7 +145,7 @@
       "unit": "% of GDP",
       "role": "openness_context",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/NE.TRD.GNFS.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -155,7 +155,7 @@
       "unit": "% of GDP",
       "role": "external_throughput_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/NE.EXP.GNFS.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -165,7 +165,7 @@
       "unit": "% of GDP",
       "role": "physical_production_depth_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/NV.IND.MANF.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -175,7 +175,7 @@
       "unit": "% of GDP",
       "role": "physical_production_depth_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/NV.IND.TOTL.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -185,7 +185,7 @@
       "unit": "current US$",
       "role": "physical_production_mass_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/NV.IND.MANF.CD?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -195,7 +195,7 @@
       "unit": "current US$",
       "role": "physical_production_mass_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/NV.IND.TOTL.CD?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -205,7 +205,7 @@
       "unit": "%",
       "role": "physical_production_momentum_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/NV.IND.MANF.KD.ZG?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -215,7 +215,7 @@
       "unit": "%",
       "role": "physical_production_momentum_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/NV.IND.TOTL.KD.ZG?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -225,7 +225,7 @@
       "unit": "%",
       "role": "manufacturing_export_complexity_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/TX.VAL.MANF.ZS.UN?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -235,7 +235,7 @@
       "unit": "%",
       "role": "productive_complexity_proxy",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/TX.VAL.TECH.MF.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -245,7 +245,7 @@
       "unit": "% of GDP",
       "role": "technical_depth_proxy_non_imf",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/GB.XPD.RSDV.GD.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -255,7 +255,7 @@
       "unit": "per million",
       "role": "technical_labor_depth_proxy_non_imf",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.SCIE.RD.P6?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -265,7 +265,7 @@
       "unit": "applications",
       "role": "revealed_technical_output_proxy_wipo",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/IP.PAT.RESD?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -275,7 +275,7 @@
       "unit": "TEU",
       "role": "logistics_throughput_proxy_non_imf",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/IS.SHP.GOOD.TU?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -285,7 +285,7 @@
       "unit": "route-km",
       "role": "physical_infrastructure_proxy_non_imf",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/IS.RRS.TOTL.KM?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -295,7 +295,7 @@
       "unit": "kWh per capita",
       "role": "physical_energy_depth_proxy_iea",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/EG.USE.ELEC.KH.PC?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -305,7 +305,7 @@
       "unit": "% of GDP",
       "role": "state_directed_strategic_allocation_proxy_sipri",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/MS.MIL.XPND.GD.ZS?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -315,7 +315,7 @@
       "unit": "index US=100 -> ratio",
       "role": "conservative_purchasing_power_price_level_crosscheck",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/PA.NUS.GDP.PLI?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -325,7 +325,7 @@
       "unit": "LCU per international $",
       "role": "purchasing_power_audit_context",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -335,7 +335,7 @@
       "unit": "LCU per international $",
       "role": "household_purchasing_power_audit_context",
       "api_url": "https://api.worldbank.org/v2/country/all/indicator/PA.NUS.PRVT.PP?format=json&per_page=20000&date=1986:2026",
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "2",
       "rows": 10600
     },
@@ -345,7 +345,7 @@
       "unit": "0-100",
       "role": "derived_physical_mass_normalizer",
       "api_url": null,
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "derived_from_world_bank_absolute_value_added",
       "rows": null
     },
@@ -355,7 +355,7 @@
       "unit": "0-100",
       "role": "derived_physical_mass_normalizer",
       "api_url": null,
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "derived_from_world_bank_absolute_value_added",
       "rows": null
     },
@@ -365,7 +365,7 @@
       "unit": "0-100",
       "role": "derived_physical_mass_normalizer",
       "api_url": null,
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "derived_from_world_bank_absolute_value_added",
       "rows": null
     },
@@ -375,7 +375,7 @@
       "unit": "0-100",
       "role": "derived_physical_mass_normalizer",
       "api_url": null,
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "derived_from_world_bank_absolute_value_added",
       "rows": null
     },
@@ -385,7 +385,7 @@
       "unit": "0-100",
       "role": "derived_physical_mass_normalizer",
       "api_url": null,
-      "lastupdated": "2026-07-01",
+      "lastupdated": "2026-07-13",
       "sourceid": "derived_from_world_bank_absolute_value_added",
       "rows": null
     }
